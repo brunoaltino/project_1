@@ -34,7 +34,7 @@ O projeto segue a **Medallion Architecture** para garantir a qualidade e linhage
 - [ ] Ingestão de dados (Camada Bronze)
 - [ ] Processamento Tidyverse/Spark (Camada Silver)
 - [ ] Modelagem de Negócio e Analytics (Camada Gold)
-- [ ] Dashboard de BI (Looker Studio/Power BI)
+- [ ] Dashboard de BI (Looker Studio)
 
 ---
 
