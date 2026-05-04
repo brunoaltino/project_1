@@ -1,0 +1,14 @@
+name: Docker Build Test
+
+# O gatilho: toda vez que salvar (push) algo no GitHub
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Testar a construção da imagem Docker
+        run: docker build -t meu-projeto-r .
