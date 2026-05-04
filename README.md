@@ -48,5 +48,5 @@ docker build -t pipeline-olist .
 # Executar o script de teste
 docker run pipeline-olist
 
-### Desenvolvido por Bruno Anderson Possamai
+### Desenvolvido por Bruno Possamai Martinez
 ### Graduando em Estatística & Ciência de Dados - UFES
