@@ -22,26 +22,25 @@ Este projeto demonstra a construção de um pipeline de dados escalável utiliza
 O projeto segue a **Medallion Architecture** para garantir a qualidade e linhagem dos dados:
 
 *   **Bronze (Raw):** Dados brutos extraídos do Kaggle/API via Airflow e armazenados no Google Cloud Storage.
-*   **Silver (Trusted):** Limpeza, padronização e tipagem de dados (Schema Enforcement) utilizando **Apache Spark (R/sparklyr)**[cite: 1].
-*   **Gold (Curated):** Tabelas agregadas e prontas para negócio (métricas de RFM e LTV) modeladas no BigQuery[cite: 1].
+*   **Silver (Trusted):** Limpeza, padronização e tipagem de dados (Schema Enforcement) utilizando **Apache Spark (R/sparklyr)**.
+*   **Gold (Curated):** Tabelas agregadas e prontas para negócio (métricas de RFM e LTV) modeladas no BigQuery.
 
 ---
 
 ## 📈 Status do Projeto
 
-- [x] Configuração da Fundação (GCP, Databricks, Docker)[cite: 1].
-- [x] Dockerfile e Automação de Build (CI/CD via GitHub Actions)[cite: 1].
-- [ ] Ingestão de dados (Camada Bronze)[cite: 1].
-- [ ] Processamento Tidyverse/Spark (Camada Silver)[cite: 1].
-- [ ] Modelagem de Negócio e Analytics (Camada Gold)[cite: 1].
-- [ ] Dashboard de BI (Looker Studio/Power BI)[cite: 1].
+- [x] Configuração da Fundação (GCP, Databricks, Docker)
+- [x] Dockerfile e Automação de Build (CI/CD via GitHub Actions)
+- [ ] Ingestão de dados (Camada Bronze)
+- [ ] Processamento Tidyverse/Spark (Camada Silver)
+- [ ] Modelagem de Negócio e Analytics (Camada Gold)
+- [ ] Dashboard de BI (Looker Studio/Power BI)
 
 ---
 
 ## 💻 Como Rodar o Ambiente
 
-Este projeto utiliza **Docker** para garantir que o ambiente R/Tidyverse seja reprodutível[cite: 1].
-
+Este projeto utiliza **Docker** para garantir que o ambiente R/Tidyverse seja reprodutível.
 ```bash
 # Construir a imagem do ambiente
 docker build -t pipeline-olist .
